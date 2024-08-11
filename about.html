@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About JS Design</title>
+    <link rel="stylesheet" href="test.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="test.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="/index.html" class="logo">
+                <span>JS</span>
+                <span>Design</span>
+            </a>
+            <ul class="nav-menu" id="unique-nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link nav-contact">Contact</a>
+                </li>
+            </ul>
+            <button id="unique-button" class="button-two" aria-expanded="false">
+                <svg stroke="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="30">
+                    <line class="line top" x1="90" x2="10" y1="40" y2="40" stroke-width="10" stroke-linecap="round" stroke-dasharray="80" stroke-dashoffset="0"></line>
+                    <line class="line bottom" x1="10" x2="90" y1="60" y2="60" stroke-width="10" stroke-linecap="round" stroke-dasharray="80" stroke-dashoffset="0"></line>
+                </svg>
+            </button>
+        </nav>
+    </header>
+    <section id="why-us">
+        <div>
+            <h1>Elevating Spaces,</h1>
+            <h1>Inspiring Lives</h1>
+            <div class="wu-para-container">
+                <p>At JS DESIGN, we don't just design interiors – we craft experiences. Our passion lies in transforming ordinary spaces into extraordinary environments that reflect your unique style and aspirations. Led by the visionary El Belkani Jassim, our team of skilled architects and 3D artists brings a perfect blend of creativity and functionality to every project. We pride ourselves on our ability to listen, understand, and then exceed your expectations.</p>
+                <p>From luxurious residential havens to cutting-edge commercial spaces, we're here to turn your dreams into reality. Our comprehensive approach ensures that from the first sketch to the final touches, every detail is thoughtfully considered and expertly executed. Ready to embark on a journey of design discovery? Let's create something beautiful together.</p>
+            </div>
+        </div>
+        <div class="about-img">
+            <img src="assets/fbceade213ce01a96421fd40bdc3fc96.webp" alt="JS Design Interior" >
+        </div>
+    </section>
+    <section class="timeline-section" id="timeline">
+        <h1>Our journey</h1>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2015</div>
+                <div class="timeline-content">
+                    <h3>Foundation of JS Design</h3>
+                    <p>El Belkani Jassim launches JS Design with a vision to revolutionize interior spaces in Morocco.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2016</div>
+                <div class="timeline-content">
+                    <h3>First Major Project</h3>
+                    <p>Completion of our first luxury residential project, setting new standards in Marrakech's design scene.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2017</div>
+                <div class="timeline-content">
+                    <h3>Commercial Expansion</h3>
+                    <p>Successfully branched into commercial design, transforming office spaces for leading Moroccan businesses.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2018</div>
+                <div class="timeline-content">
+                    <h3>Award-Winning Designs</h3>
+                    <p>Received national recognition for our innovative approach to blending traditional Moroccan elements with modern design.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2019</div>
+                <div class="timeline-content">
+                    <h3>International Collaboration</h3>
+                    <p>Partnered with renowned European designers, bringing global trends to local projects.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2020</div>
+                <div class="timeline-content">
+                    <h3>Virtual Design Services</h3>
+                    <p>Adapted to global challenges by introducing virtual design consultations, expanding our reach beyond Morocco.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2021</div>
+                <div class="timeline-content">
+                    <h3>Sustainable Design Initiative</h3>
+                    <p>Launched our eco-friendly design program, focusing on sustainable materials and energy-efficient spaces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="client-benefits" id="benefits">
+        <div class="benefits-container">
+          <h1>Our Services</h1>
+          <div class="benefits-grid">
+            <div class="benefit-card">
+              <div class="icon-container">
+                <i class="fas fa-home"></i>
+              </div>
+              <h3>Personalized Luxury</h3>
+              <p>We create bespoke designs that reflect your unique style, turning your living spaces into personal sanctuaries that inspire and rejuvenate you daily.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="icon-container">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <h3>Productive Environments</h3>
+              <p>Our expertly designed workspaces boost productivity and creativity, helping you achieve your professional goals in comfort and style.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="icon-container">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <h3>Stress-Free Process</h3>
+              <p>From concept to completion, we manage every detail, allowing you to enjoy the transformation without the hassle of coordination and decision fatigue.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="icon-container">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Increased Property Value</h3>
+              <p>Our high-end designs not only enhance your living experience but also significantly increase your property's market value.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section id="our-tech">
+    </section>
+    <section id="stats-1229">
+        <div class="cs-container">
+            <ul class="cs-stat-group">
+                <li class="cs-stat">
+                    <span class="cs-desc">Individual Offices</span>
+                    <span class="cs-number">15+</span>
+                </li>
+                <li class="cs-stat">
+                    <span class="cs-desc">Years of Experiences</span>
+                    <span class="cs-number">12+</span>
+                </li>
+                <li class="cs-stat">
+                    <span class="cs-desc">Professional Team</span>
+                    <span class="cs-number">350</span>
+                </li>
+                <li class="cs-stat">
+                    <span class="cs-desc">Projects Completed</span>
+                    <span class="cs-number">375</span>
+                </li>
+                <li class="cs-stat">
+                    <span class="cs-desc">Happy Clients</span>
+                    <span class="cs-number">2.5k+</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="reviews-354 testies " class="testimonials text-center">
+        <h1>Our clients love us</h1>
+        <div class="wrapper">
+            <div class="review-card">
+                <div class="header-content">
+                    <div class="img-area">
+                      <img alt="Aisha Benali" src="assets/c.webp">
+                    </div>
+                    <div class="info">
+                        <h4>Aisha Benali</h4>
+                        <p>Luxury Villa Owner</p>
+                    </div>
+                </div>
+                <div class="single-review">
+                    <p>JS Design transformed my holiday home into a breathtaking oasis. Their attention to detail and ability to capture the essence of Moroccan style while maintaining modern comfort is unparalleled.</p>
+                </div>
+                <div class="review-footer">
+                    <div class="rating">
+                        <span class="active">★</span> 
+                        <span class="active">★</span> 
+                        <span class="active">★</span> 
+                        <span class="active">★</span> 
+                        <span class="active">★</span>
+                    </div>
+                    <p>Reviewed on 15/07/2023</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="header-content">
+                    <div class="img-area">
+                      <img alt="Omar Tazi" src="assets/b.webp">
+                    </div>
+                    <div class="info">
+                        <h4>Omar Tazi</h4>
+                        <p>CEO, Tech Startup</p>
+                    </div>
+                </div>
+                <div class="single-review">
+                    <p>Our office redesign by JS Design boosted team morale and productivity. They created a space that truly reflects our company culture and fosters creativity.</p>
+                </div>
+                <div class="review-footer">
+                    <div class="rating">
+                        <span class="active">★</span> 
+                        <span class="active">★</span> 
+                        <span class="active">★</span> 
+                        <span class="active">★</span> 
+                        <span class="active">★</span>
+                    </div>
+                    <p>Reviewed on 22/08/2023</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="header-content">
+                    <div class="img-area">
+                      <img alt="Sophie Dubois" src="assets/a.webp">
+                    </div>
+                    <div class="info">
+                        <h4>Sophie Dubois</h4>
+                        <p>Boutique Hotel Manager</p>
+                    </div>
+                </div>
+                <div class="single-review">
+                    <p>Working with JS Design was a dream. They beautifully balanced luxury with functionality, creating spaces our guests absolutely adore. Our bookings have increased significantly!</p>
+                </div>
+                <div class="review-footer">
+                    <div class="rating">
+                        <span class="active">★</span> 
+                        <span class="active">★</span> 
+                        <span class="active">★</span> 
+                        <span class="active">★</span> 
+                        <span class="active">★</span>
+                    </div>
+                    <p>Reviewed on 05/09/2023</p>
+                </div>
+            </div>
+        </div>
+        <button class="btn">
+            <span class="text-shine">See More Reviews</span>
+            <div class="shine"></div>
+        </button>
+    </section>
+    <section id="credentials">
+        <h1>Who we work with</h1>
+        <div class="logo-slider" data-v-4ef8651c="">
+            <div class="logos-slide" data-v-4ef8651c="">
+              <img src="https://i.ibb.co/Vv5rkDK/api-partner-verzon.png" data-v-4ef8651c="">
+              <img src="https://i.ibb.co/J399KDg/api-partner-netflix.png" data-v-4ef8651c="">
+              <img src="https://i.ibb.co/TKT0F5L/api-partner-yelp.png" data-v-4ef8651c="">
+              <img src="https://i.ibb.co/HG6KR89/api-partner-adobe.png" data-v-4ef8651c="">
+              <img src="https://i.ibb.co/hMSJ1sg/api-partner-ring.png" data-v-4ef8651c="">
+              <img src="https://i.ibb.co/4RWQcMS/api-partner-nespresso.png" data-v-4ef8651c="" >
+            </div>
+          </div>
+    </section>
+    <section id="cs-contact-490">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Contact Us</span>
+                <h2 class="cs-title">Let's Bring Your Vision to Life</h2>
+                <p class="cs-text">
+                    Ready to transform your space? Whether you're dreaming of a serene home sanctuary, an inspiring office, or a captivating commercial space, we're here to turn your ideas into reality. Our team of expert designers is just a message away. Reach out today, and let's start creating something extraordinary together.
+                </p>
+                
+                <span class="cs-header">Address</span>
+                <a href="" class="cs-link">
+                    44 Avenue des F.A.R, 8ème Étage<br>Casablanca, Morocco
+                </a>
+                <span class="cs-header">Email</span>
+                <a href="mailto:Architecture.js.design@gmail.com" class="cs-link">Architecture.js.design@gmail.com</a>
+                <span class="cs-header">Phone</span>
+                <a href="tel:+212520650764" class="cs-link">+212 5 20 65 07 64</a>
+    
+                <div class="cs-social">
+                    <a class="cs-social-link" aria-label="visit google profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Form -->
+            <form id="cs-form-490" name="Contact Form" method="post">
+                <label class="cs-label">
+                    Name
+                    <input class="cs-input" required type="text" id="name-490" name="name" placeholder="John/Jane Doe">
+                </label>
+                <label class="cs-label">
+                    Email
+                    <input class="cs-input" required type="text" id="email-490" name="email" placeholder="name@company.com">
+                </label>
+                <label class="cs-label">
+                    Phone
+                    <input class="cs-input" required type="text" id="phone-490" name="phone" placeholder="+1 (206) 987-6543">
+                </label>
+                <label class="cs-label">
+                    How Did You Find Us
+                    <input class="cs-input" type="text" id="find-490" name="find-us" placeholder="Social Media, Family, Friend...">
+                </label>
+                <label class="cs-label -label-message">
+                    Message
+                    <textarea class="cs-input" required name="Message" id="message-490" placeholder="Hello, I’m interested in..."></textarea>
+                </label>
+                <button class="cs-button-solid" type="submit">Submit Message Now</button>
+            </form>
+        </div>
+    </section>
+    <footer id="cs-footer-108">
+        <div class="cs-container">
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a href="" class="cs-link ">Home</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">About</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">Services</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">Portfolio</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">Contact</a>
+                </li>
+            </ul>
+            <span class="cs-copyright">© 2024 Copyright
+                <br>
+                made by yahya after aquiring a crippling coffe addiction and permanant brain damage
+            </span>
+        </div>
+    </footer>
+</body>
+</html>

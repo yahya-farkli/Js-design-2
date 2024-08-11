@@ -1,65 +1,48 @@
-/* 
+const uniqueButton = document.getElementById("unique-button");
 
-const buttons = document.querySelectorAll("button");
-
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const currentState = button.getAttribute("data-state");
+uniqueButton.addEventListener("click", () => {
+    const currentState = uniqueButton.getAttribute("data-state");
 
     if (!currentState || currentState === "closed") {
-      button.setAttribute("data-state", "opened");
-      button.setAttribute("aria-expanded", "true");
+        uniqueButton.setAttribute("data-state", "opened");
+        uniqueButton.setAttribute("aria-expanded", "true");
     } else {
-      button.setAttribute("data-state", "closed");
-      button.setAttribute("aria-expanded", "false");
+        uniqueButton.setAttribute("data-state", "closed");
+        uniqueButton.setAttribute("aria-expanded", "false");
     }
-  });
 });
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
 
-hamburger.addEventListener("click", mobileMenu);
+const uniqueHamburger = document.querySelector("#unique-button .hamburger");
+const uniqueNavMenu = document.getElementById("unique-nav-menu");
+
+uniqueHamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+    uniqueHamburger.classList.toggle("active");
+    uniqueNavMenu.classList.toggle("active");
 }
-const navLink = document.querySelectorAll(".nav-link");
 
-navLink.forEach(n => n.addEventListener("click", closeMenu));
+const navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach(n => n.addEventListener("click", closeMenu));
 
 function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+    uniqueHamburger.classList.remove("active");
+    uniqueNavMenu.classList.remove("active");
 }
- */
 
-const button = document.querySelector('.btn');
-let hoverTimeout;
-
-button.addEventListener('mouseenter', () => {
-    clearTimeout(hoverTimeout);
-    hoverTimeout = setTimeout(() => {
-        button.style.backgroundColor = 'var(--button-hover)';
-    }, 200);
-});
-
-button.addEventListener('mouseleave', () => {
-    clearTimeout(hoverTimeout);
-    button.style.backgroundColor = 'var(--button-bg)';
-});
 
 document.addEventListener('DOMContentLoaded', function() {
     new Swiper('.swiper', {
       // Optional parameters
       loop: true,
-      slidesPerView: 1,
+      slidesPerView: 1.5,
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
         delay: 2500,
         disableOnInteraction: true,
-        autoplay:false
+        /* autoplay:false */
       },
       // If you want pagination
       pagination: {
@@ -73,12 +56,17 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       // Responsive breakpoints
       breakpoints: {
-        640: {
+        
+        600: {
           slidesPerView: 2,
         },
         1024: {
-          slidesPerView: 3,
+          slidesPerView: 1.5,
         },
       },
     });
   });
+
+
+  var copy = document.querySelector(".logos-slide").cloneNode(true);
+document.querySelector(".logo-slider").appendChild(copy);
