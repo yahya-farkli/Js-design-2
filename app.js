@@ -46,4 +46,17 @@ function showSlider(type){
     runNextAuto = setTimeout(() => {
         next.click();
     }, timeAutoNext)
+}// Select all the images in the carousel and thumbnails
+const carouselImages = document.querySelectorAll('.carousel .list .item img');
+const thumbnailImages = document.querySelectorAll('.thumbnail .item img');
+
+// Function to set alt text
+function setAltText(images, prefix) {
+    images.forEach((img, index) => {
+        img.setAttribute('alt', `${prefix} ${index + 1}`);
+    });
 }
+
+// Apply alt text to carousel and thumbnail images
+setAltText(carouselImages, 'Interior design project');
+setAltText(thumbnailImages, 'Interior design project');

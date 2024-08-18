@@ -52,6 +52,7 @@ body{
 a{
     text-decoration: none;
 }
+
 .carousel .list .item .buttons{
     display: flex;
     gap: 2rem;
@@ -67,7 +68,7 @@ a{
     font-size: 18px;
     font-weight: bold;
     color: var(--button-text);
-    background-color: rgba(0, 0, 0, 0.13);
+    background-color: rgba(0, 0, 0, 0.815);
     border: 1px solid var(--button-border);
     border-radius: 50px;
     width: fit-content;
@@ -88,7 +89,7 @@ a{
     transform: translateY(-2px);
 }
 .btn:first-of-type {
-    background-color: rgba(255, 255, 255, 0.164);
+    background-color: rgba(200, 169, 126, 1);
 
 }
 .btn:active {
@@ -153,6 +154,12 @@ a{
     .text-shine {
         font-size: 20px;
     }
+}
+
+.carousel > .list > .item > img {
+  
+  filter: brightness(50%); /* Darkens the image */
+  backdrop-filter: brightness(50%); /* Applies the darkening effect */
 }
 .des {
 
@@ -274,6 +281,7 @@ a{
     font-family: monospace;
     font-weight: bold;
     transition: .5s;
+    backdrop-filter: blur(10px);
 }
 .arrows button:hover{
     background-color: #fff;

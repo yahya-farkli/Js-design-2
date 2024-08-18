@@ -34,6 +34,11 @@
 --variable-collection-dark: rgba(30, 30, 30, 1);
 --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) ;
 --smallSectionPadding: 2rem;
+--font-size: 1em;
+--bg1: #f5f8f7;
+--shadow1: 0 2px 4px #00000026, 0 3px 6px #0000001f;
+--shadow2: 0 2px 6px #00000044, 0 4px 7px #00000022;
+
 }
 body{
     background-color: var(--black);
@@ -44,7 +49,42 @@ header {
 /*     padding: 0 var(--sectionPadding);
  */}
  @media only screen and (min-width: 0rem) {
- nav {
+  header {
+    position: sticky;
+    top: -1px;
+    background-color: var(--black);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+    border-radius: 0 0 15px 15px;
+    z-index: 10;
+  }
+  #main-header {
+    
+    transition: background-color 0.3s ease;
+  }
+  
+  #main-header.transparent {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+  }
+  
+  #main-header.solid {
+    background-color: var(--black); /* Replace with your desired color */
+  }
+  #intro {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #intro > .content {
+    align-items: center;
+  }
+  .timeline-cta span .referal{
+    color: var(--accent-1);
+    font-size: 18px;
+    font-weight: 500;
+  }
+  nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -116,10 +156,7 @@ header {
     stroke-dashoffset: 0;
   }
 }
-/* @media only screen and (max-width:480px){
-  header {
-    padding-left: 10%;
-  }
+/* 
 } */
 @media only screen and (max-width: 768px) {
   .nav-menu {
@@ -144,6 +181,7 @@ header {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: 0;
   }
 
   .nav-item {
@@ -176,7 +214,10 @@ nav ul {
     min-width: 50%;
     padding: 0;
 }
-
+.navbar {
+ 
+  z-index: 10;
+}
 nav ul li {
     color: var(--prime);
     font-family: "Poppins";
@@ -770,7 +811,57 @@ section {
 }
 /* tablet */
 @media only screen and (min-width: 37.5rem) {
-  section, header {
+  #timeline-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .timeline-cta span .referal{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .timeline-cta{
+    text-align: center;
+  }
+  #intro {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: flex-start;
+  }
+  #intro h1 {
+    padding: 0;
+  }
+  #intro > .content{
+    max-width: 45%;
+    text-align: left;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    }
+  #intro  .see-more-small {
+    display: none;
+  }
+  #intro .see-more-large {
+    display: block;
+    padding-inline: 4rem;
+    font-size: 18px;
+ }
+ #intro .see-more-large .text-shine {
+  margin-top: 0.25rem;
+ }
+ header{
+  margin-inline: 0;
+  padding-inline: var(--sectionPadding);
+  padding-block: 1.5rem;
+
+ }
+  section {
     margin-inline: 4rem;
     padding-bottom: var(--sectionPadding);
   }
@@ -830,6 +921,9 @@ section {
   /* Desktop styles */
 
 @media only screen and (min-width: 64rem) {
+  header {
+/*     margin-inline: 4rem;
+ */  }
   #hero {
     display: grid;
     grid-template-columns: auto 10% 40% ;
@@ -837,6 +931,7 @@ section {
     align-items: start;
     grid-template-areas: "container hero-gap img";
     padding: var(--sectionPadding);
+    margin-top: 4rem;
     }
     .hero-gap {
       grid-area: hero-gap;
@@ -927,13 +1022,19 @@ section {
     .see-more-large{
       display: block;
     }
+    .timeline-cta{
+      max-width: 50%;
+      text-align: center;
+    }
 }
 @media only screen and (min-width: 65rem){
   .hero-img-container img{
     min-height: 60dvh;
-  }
+    max-height: 100vh;
+    }
   .hero-img-container{
     min-height: 60dvh;
+    max-height: 100vh;
   }
   #cta, #folio, #cs-contact-490, #cs-footer-108 {
     padding-top: 0;
@@ -988,11 +1089,12 @@ section {
   }
 }
  
-  #why-us > div > h1,.testimonials > h1, #timeline > h1, #benefits > .benefits-container > h1{
+  #why-us > div > h1,.testimonials > h1, #timeline > h1, #benefits > .benefits-container > h1, .header-content h1, #intro > .content > h1,.benefits-container h1, #timeline-section > h1, .stat-title , #credentials > h1{
   font-family: "Raleway";
   font-size: 36px;
   font-weight: 600;
   text-align: center;
+  color: var(--accent-1);
   margin: 0;
   padding-block: 0.5rem;
 } 
@@ -1032,10 +1134,8 @@ section {
   border-radius: 10px;
 }
 
-#timeline > h1 {
-  text-align: left;
-  margin-bottom: 2rem;
-  margin-top: 0%;
+#timeline-section > h1 {
+ 
   color: var(--accent-1);
 }
 /* dont include this in min-width:0 */
@@ -1114,7 +1214,6 @@ section {
 
 	line-height: 22px;
 }
-
 /* responsive */
 @media(max-width: 767px){
 	.timeline-items::before{
@@ -1139,8 +1238,11 @@ section {
 }
 
 .benefits-container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
+  gap: clamp(3rem, 6vw, 4rem);
+  display: flex;
+  flex-direction: column;
 }
 
 #benefits > .benefits-container > h1 {
@@ -1305,14 +1407,17 @@ section {
       flex-direction: row;
       flex-wrap: wrap;
   }
-  
+  /* header {
+    padding-bottom: 0%;
+  } */
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+  
   #stats-1229 .cs-container {
       max-width: 80rem;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
   }
   #stats-1229 .cs-title,
@@ -1456,7 +1561,7 @@ section {
       align-items: center;
       gap: 2rem;
   }
-  #why-us > div > h1, .testimonials > h1, #timeline > h1, #benefits > .benefits-container > h1 {
+  #why-us > div > h1, .testimonials > h1, #timeline > h1, #benefits > .benefits-container > h1 , .header-content h1,.stat-title,#credentials > h1 {
     font-family: "Raleway";
     font-size: 42px;
     font-weight: 600;
@@ -1494,4 +1599,153 @@ section {
   to {
       transform: translateX(-100%);
   }
+}
+.header-section {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background-image: url('webp images/cafe-8.webp'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  top: -16.5vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity for desired effect */
+  z-index: 1;
+}
+.header-content {
+  display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    z-index: 2;
+    justify-content: center;
+    flex-direction: column;
+  height: 100%;
+  translate: 0 10%;
+}
+
+
+
+
+
+
+
+
+.timeline__item {
+  margin-bottom: 4em;
+  position: relative;
+  width: 100%;
+}
+
+@media screen and (min-width: 50em) {
+  .timeline__item {
+    width: 45%;
+  }
+
+  .timeline__item.right {
+    margin-left: auto;
+  }
+}
+
+.timeline__day {
+  font-family: var(--titles-font-font-family);
+  font-weight: var(--titles-font-font-weight);
+  font-size: var(--titles-font-font-size);
+  color: var(--prime);
+  text-transform: uppercase;
+  padding-bottom: 0.75em;
+  margin-top: 0;
+}
+
+.timeline__day span {
+  font-weight: 300;
+  color: var(--accent-1);
+  text-transform: none;
+}
+
+.timeline__day-sum {
+  color: var(--prime);
+  font-weight: 300;
+  font-size: var(--font-size);
+  display: block;
+  margin-bottom: 1.5em;
+  line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    padding-inline: 0;
+}
+.header-content h1 {
+  color: var(--accent-1);
+  padding: 0;  
+  margin-top: 0;
+}
+.header-content p{
+  margin-block: 1rem;
+}
+.header-content .btn {
+  margin-top: 0.5rem;
+  background-color: #0000001e;
+  backdrop-filter: blur(10px);
+} 
+.header-content .btn .text-shine {
+  margin-top: 0.25rem;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 1.25rem;
+}
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+@media (max-width: 768px) {
+  .whatsapp i {
+      font-size: 40px; /* Adjust size for tablets */
+  }
+}
+
+/* Even smaller size for phones */
+@media (max-width: 480px) {
+  .whatsapp {
+      bottom: 15px;
+      right: 15px;
+  }
+
+  .whatsapp i {
+      font-size: 35px; /* Adjust size for phones */
+  }
+}.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+#credentials  {
+  gap: clamp(3rem, 6vw, 4rem);
+  display: flex;
+  flex-direction: column;  
 }
