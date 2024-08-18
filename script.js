@@ -223,3 +223,7 @@ gsap.from(".from-top", {
   y: -100, opacity: 0, duration: 1, ease: "power2.out"
 });
 
+const TitleBottomSmall = document.querySelectorAll(".TitleBottomSmall path");
+for (let i = 0; i < TitleBottomSmall.length; i++) {
+  console.log(`Letter ${i} is ${TitleBottomSmall[i].getTotalLength()}`);
+}
