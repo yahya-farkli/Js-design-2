@@ -2,33 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="JS DESIGN: Transforming spaces into extraordinary experiences. Led by El Belkani Jassim, our team of skilled architects and 3D artists creates luxurious residential and cutting-edge commercial interiors that inspire and elevate lives.">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About JS Design</title>
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="script.js" defer></script>
+    <script src="test.js" defer></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="preload" as="image" href="assets/fbceade213ce01a96421fd40bdc3fc96.webp" type="image/webp">
+
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
-            <a href="/index.html" class="logo">
+            <a href="index.html" class="logo">
                 <span>JS</span>
                 <span>Design</span>
             </a>
             <ul class="nav-menu" id="unique-nav-menu">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Services</a>
+                    <a href="services.html" class="nav-link">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Portfolio</a>
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="about.html" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link nav-contact">Contact</a>
+                    <a href="#cs-contact-490" class="nav-link nav-contact">Contact</a>
                 </li>
             </ul>
             <button id="unique-button" class="button-two" aria-expanded="false">
@@ -49,13 +55,21 @@
             </div>
         </div>
         <div class="about-img">
-            <img src="assets/fbceade213ce01a96421fd40bdc3fc96.webp" alt="JS Design Interior" >
-        </div>
+            <img src="assets/fbceade213ce01a96421fd40bdc3fc96.webp" 
+                 srcset="assets/fbceade213ce01a96421fd40bdc3fc96-small.webp 300w,
+                         assets/fbceade213ce01a96421fd40bdc3fc96-medium.webp 600w,
+                         assets/fbceade213ce01a96421fd40bdc3fc96.webp 1200w"
+                 sizes="(max-width: 300px) 300px,
+                        (max-width: 600px) 600px,
+                        1200px"
+                 alt="JS Design Interior"
+                 >
+          </div>
     </section>
     <section class="timeline-section" id="timeline">
         <h1>Our journey</h1>
-        <div class="timeline-items">
-            <div class="timeline-item">
+        <div class="timeline-items ">
+            <div class="timeline-item ">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2015</div>
                 <div class="timeline-content">
@@ -117,28 +131,28 @@
         <div class="benefits-container">
           <h1>Our Services</h1>
           <div class="benefits-grid">
-            <div class="benefit-card">
+            <div class="benefit-card from-bottom-socials">
               <div class="icon-container">
                 <i class="fas fa-home"></i>
               </div>
               <h3>Personalized Luxury</h3>
               <p>We create bespoke designs that reflect your unique style, turning your living spaces into personal sanctuaries that inspire and rejuvenate you daily.</p>
             </div>
-            <div class="benefit-card">
+            <div class="benefit-card from-bottom-socials">
               <div class="icon-container">
                 <i class="fas fa-briefcase"></i>
               </div>
               <h3>Productive Environments</h3>
               <p>Our expertly designed workspaces boost productivity and creativity, helping you achieve your professional goals in comfort and style.</p>
             </div>
-            <div class="benefit-card">
+            <div class="benefit-card from-bottom-socials">
               <div class="icon-container">
                 <i class="fas fa-hands-helping"></i>
               </div>
               <h3>Stress-Free Process</h3>
               <p>From concept to completion, we manage every detail, allowing you to enjoy the transformation without the hassle of coordination and decision fatigue.</p>
             </div>
-            <div class="benefit-card">
+            <div class="benefit-card from-bottom-socials">
               <div class="icon-container">
                 <i class="fas fa-chart-line"></i>
               </div>
@@ -261,89 +275,93 @@
         <h1>Who we work with</h1>
         <div class="logo-slider" data-v-4ef8651c="">
             <div class="logos-slide" data-v-4ef8651c="">
-              <img src="https://i.ibb.co/Vv5rkDK/api-partner-verzon.png" data-v-4ef8651c="">
-              <img src="https://i.ibb.co/J399KDg/api-partner-netflix.png" data-v-4ef8651c="">
-              <img src="https://i.ibb.co/TKT0F5L/api-partner-yelp.png" data-v-4ef8651c="">
-              <img src="https://i.ibb.co/HG6KR89/api-partner-adobe.png" data-v-4ef8651c="">
-              <img src="https://i.ibb.co/hMSJ1sg/api-partner-ring.png" data-v-4ef8651c="">
-              <img src="https://i.ibb.co/4RWQcMS/api-partner-nespresso.png" data-v-4ef8651c="" >
+              <img src="https://i.ibb.co/Vv5rkDK/api-partner-verzon.png" data-v-4ef8651c="" alt="big comapany logo">
+              <img src="https://i.ibb.co/J399KDg/api-partner-netflix.png" data-v-4ef8651c="" alt="big comapany logo netflix">
+              <img src="https://i.ibb.co/TKT0F5L/api-partner-yelp.png" data-v-4ef8651c="" alt="big comapany logo yelp">
+              <img src="https://i.ibb.co/HG6KR89/api-partner-adobe.png" data-v-4ef8651c="" alt="big comapany logo adobe">
+              <img src="https://i.ibb.co/hMSJ1sg/api-partner-ring.png" data-v-4ef8651c="" alt="big comapany logo ring">
+              <img src="https://i.ibb.co/4RWQcMS/api-partner-nespresso.png" data-v-4ef8651c="" alt="big comapany logo nespresso">
             </div>
           </div>
     </section>
     <section id="cs-contact-490">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Contact Us</span>
-                <h2 class="cs-title">Let's Bring Your Vision to Life</h2>
-                <p class="cs-text">
+                <span class="cs-topper  from-bottom">Contact Us</span>
+                <h2 class="cs-title  from-bottom" >Let's Bring Your Vision to Life</h2>
+                <p class="cs-text  from-bottom">
                     Ready to transform your space? Whether you're dreaming of a serene home sanctuary, an inspiring office, or a captivating commercial space, we're here to turn your ideas into reality. Our team of expert designers is just a message away. Reach out today, and let's start creating something extraordinary together.
                 </p>
                 
-                <span class="cs-header">Address</span>
-                <a href="" class="cs-link">
+                <span class="cs-header from-bottom" >Address</span>
+                <a href="" class="cs-link from-bottom">
                     44 Avenue des F.A.R, 8ème Étage<br>Casablanca, Morocco
                 </a>
-                <span class="cs-header">Email</span>
-                <a href="mailto:Architecture.js.design@gmail.com" class="cs-link">Architecture.js.design@gmail.com</a>
-                <span class="cs-header">Phone</span>
-                <a href="tel:+212520650764" class="cs-link">+212 5 20 65 07 64</a>
+                <span class="cs-header from-bottom">Email</span>
+                <a href="mailto:Architecture.js.design@gmail.com" class="cs-link from-bottom">Architecture.js.design@gmail.com</a>
+                <span class="cs-header from-bottom">Phone</span>
+                <a href="tel:+212520650764" class="cs-link from-bottom">+212 5 20 65 07 64</a>
     
                 <div class="cs-social">
-                    <a class="cs-social-link" aria-label="visit google profile" href="">
+                    <a class="cs-social-link from-bottom-socials" aria-label="visit google profile" href="">
                         <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
                     </a>
-                    <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                    <a class="cs-social-link from-bottom-socials" aria-label="visit facebook profile" href="">
                         <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
                     </a>
-                    <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                    <a class="cs-social-link from-bottom-socials" aria-label="visit instagram profile" href="">
                         <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
                     </a>
                 </div>
             </div>
             
             <!-- Form -->
-            <form id="cs-form-490" name="Contact Form" method="post">
+            <form class="from-left" id="cs-form-490" name="Contact Form" action="https://formsubmit.co/yahyafarkli63@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501/thankyou.html">
+  
+    
                 <label class="cs-label">
-                    Name
-                    <input class="cs-input" required type="text" id="name-490" name="name" placeholder="John/Jane Doe">
-                </label>
-                <label class="cs-label">
-                    Email
-                    <input class="cs-input" required type="text" id="email-490" name="email" placeholder="name@company.com">
-                </label>
-                <label class="cs-label">
-                    Phone
-                    <input class="cs-input" required type="text" id="phone-490" name="phone" placeholder="+1 (206) 987-6543">
-                </label>
-                <label class="cs-label">
-                    How Did You Find Us
-                    <input class="cs-input" type="text" id="find-490" name="find-us" placeholder="Social Media, Family, Friend...">
-                </label>
-                <label class="cs-label -label-message">
-                    Message
-                    <textarea class="cs-input" required name="Message" id="message-490" placeholder="Hello, I’m interested in..."></textarea>
-                </label>
-                <button class="cs-button-solid" type="submit">Submit Message Now</button>
-            </form>
+                      Name
+                      <input class="cs-input" required type="text" id="name-490" name="name" placeholder="John/Jane Doe">
+                  </label>
+                  <label class="cs-label">
+                      Email
+                      <input class="cs-input" required type="text" id="email-490" name="email" placeholder="name@company.com">
+                  </label>
+                  <label class="cs-label">
+                      Phone
+                      <input class="cs-input" required type="text" id="phone-490" name="phone" placeholder="+1 (206) 987-6543">
+                  </label>
+                  <label class="cs-label">
+                      How Did You Find Us
+                      <input class="cs-input" type="text" id="find-490" name="find-us" placeholder="Social Media, Family, Friend...">
+                  </label>
+                  <label class="cs-label -label-message">
+                      Message
+                      <textarea class="cs-input" required name="Message" id="message-490" placeholder="Hello, I’m interested in..."></textarea>
+                  </label>
+                  <button class="cs-button-solid" type="submit">Submit Message Now</button>
+              </form>
         </div>
     </section>
+    
     <footer id="cs-footer-108">
         <div class="cs-container">
             <ul class="cs-ul">
                 <li class="cs-li">
-                    <a href="" class="cs-link ">Home</a>
+                    <a href="index.html" class="cs-link ">Home</a>
                 </li>
                 <li class="cs-li">
-                    <a href="" class="cs-link">About</a>
+                    <a href="about.html" class="cs-link">About</a>
                 </li>
                 <li class="cs-li">
-                    <a href="" class="cs-link">Services</a>
+                    <a href="services.html" class="cs-link">Services</a>
                 </li>
                 <li class="cs-li">
-                    <a href="" class="cs-link">Portfolio</a>
+                    <a href="portfolio.html" class="cs-link">Portfolio</a>
                 </li>
                 <li class="cs-li">
-                    <a href="" class="cs-link">Contact</a>
+                    <a href="#contact" class="cs-link">Contact</a>
                 </li>
             </ul>
             <span class="cs-copyright">© 2024 Copyright
@@ -352,5 +370,9 @@
             </span>
         </div>
     </footer>
+    <a href="https://wa.me/212781845710" target="_blank" class="whatsapp" aria-label="Contact us on WhatsApp">
+        <i class="fa-brands fa-whatsapp fa-3x text-shine" aria-hidden="true"></i>
+        <span class="sr-only">Contact us on WhatsApp</span>
+    </a>
 </body>
 </html>
