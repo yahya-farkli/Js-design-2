@@ -497,7 +497,7 @@ h3 ,.cs-title{
 }
 .cta-text{
   color: var(--accent-1);
-font-size: 9vw;
+font-size: 4vw;
 font-family: "Raleway";
 font-weight: 800;
 text-wrap: nowrap;
@@ -866,7 +866,7 @@ section {
     padding-bottom: var(--sectionPadding);
   }
   .cta-text {
-    font-size: 8.5vw;
+    font-size: 4.5vw;
   }
   #cs-contact-490 .cs-container {
     max-width: 80rem;
