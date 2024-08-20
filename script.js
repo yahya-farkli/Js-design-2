@@ -1,3 +1,6 @@
+/* import ScrollReveal from 'scrollreveal';
+ */
+
 const uniqueButton = document.getElementById("unique-button");
 
 uniqueButton.addEventListener("click", () => {
@@ -32,6 +35,33 @@ function closeMenu() {
 }
 
 
+
+/* transparent header */
+document.addEventListener('DOMContentLoaded', function() {
+  const header = document.getElementById('main-header');
+  const hero = document.getElementById('header-section');
+  
+  // Only proceed if both header and hero elements exist
+  if (header && hero) {
+    function updateHeaderBackground() {
+      const heroBottom = hero.getBoundingClientRect().bottom;
+      
+      if (heroBottom > 0) {
+        header.classList.add('transparent');
+        header.classList.remove('solid');
+      } else {
+        header.classList.remove('transparent');
+        header.classList.add('solid');
+      }
+    }
+    
+    // Use passive listener for better scroll performance
+    window.addEventListener('scroll', updateHeaderBackground, { passive: true });
+    
+    // Call once to set initial state
+    updateHeaderBackground();
+  }
+});
 document.addEventListener('DOMContentLoaded', function() {
     new Swiper('.swiper', {
       // Optional parameters
@@ -68,5 +98,132 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-  var copy = document.querySelector(".logos-slide").cloneNode(true);
+/*   var copy = document.querySelector(".logos-slide").cloneNode(true);
 document.querySelector(".logo-slider").appendChild(copy);
+
+ */
+gsap.fromTo('.hero-img-img', {
+  scaleX: 0,
+  transformOrigin: 'left center'
+}, {
+  scaleX: 1,
+  duration: 1,
+  ease: 'power4'
+});
+
+gsap.fromTo('.hero-img-container-img', {
+  scaleX: 0,
+  transformOrigin: 'left center'
+}, {
+  scaleX: 1,
+  duration: 1,
+  ease: 'power4',
+  delay: 0.5 // Small delay for a staggered effect
+});
+
+// Scroll animations
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray('.from-bottom').forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      start: "top 80%",
+      toggleActions: "play none none none",
+      once: true // This ensures the animation only happens once
+    },
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out"
+  });
+});
+
+gsap.utils.toArray('.from-left').forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      start: "top 80%",
+      toggleActions: "play none none none",
+      once: true // This ensures the animation only happens once
+    },
+    x: -100,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out"
+  });
+});
+
+gsap.utils.toArray('.from-center').forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      start: "top 90%",
+      toggleActions: "play none none none",
+      once: true // This ensures the animation only happens once
+    },
+    opacity: 0,
+    duration: 2,
+    ease: "power2.in"
+  });
+});
+
+
+gsap.utils.toArray('.from-bottom-socials').forEach((element, index) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      start: "top 100%",
+      toggleActions: "play none none none"
+    },
+    y: 100,
+    opacity: 0,
+    duration: 0.5,
+    ease: "sine.in",
+    delay: index * 0.25 // Delays each animation by 0.5s more than the previous one
+  });
+});
+gsap.utils.toArray('.from-right').forEach((element, index) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      start: "top 100%",
+      toggleActions: "play none none none"
+    },
+    x: 100,
+    opacity: 0,
+    duration: 0.5,
+    ease: "sine.in",
+    delay: index * 0.25 // Delays each animation by 0.5s more than the previous one
+  });
+});
+gsap.utils.toArray('.timeline-item').forEach((element, index) => {
+  const direction = index % 2 === 0 ? '-100%' : '100%'; // Alternates direction for each element
+  
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      start: "top 80%",
+      toggleActions: "play none none none"
+    },
+    x: direction, // Moves the element from left or right based on the direction variable
+    opacity: 0,
+    duration: 0.8,
+    ease: "power2.out"
+  });
+});
+
+/* 
+gsap.from(".from-left", {
+  scrollTrigger: { trigger: ".from-left", start: "top 80%" },
+  x: -100, opacity: 0, duration: 1, ease: "power2.out"
+}); */
+gsap.from(".from-top", {
+  scrollTrigger: { trigger: ".from-top", start: "top 80%" },
+  y: -100, opacity: 0, duration: 1, ease: "power2.out"
+});
+
+const TitleBottomSmall = document.querySelectorAll(".TitleBottomSmall path");
+for (let i = 0; i < TitleBottomSmall.length; i++) {
+  console.log(`Letter ${i} is ${TitleBottomSmall[i].getTotalLength()}`);
+}
