@@ -222,8 +222,21 @@ gsap.from(".from-top", {
   scrollTrigger: { trigger: ".from-top", start: "top 80%" },
   y: -100, opacity: 0, duration: 1, ease: "power2.out"
 });
-
+/* 
 const TitleBottomSmall = document.querySelectorAll(".TitleBottomSmall path");
 for (let i = 0; i < TitleBottomSmall.length; i++) {
   console.log(`Letter ${i} is ${TitleBottomSmall[i].getTotalLength()}`);
-}
+} */
+
+document.addEventListener('DOMContentLoaded', function() {
+  const svg = document.querySelector(".titleBottomSmall");
+  const originalDisplay = svg.style.display;
+  svg.style.display = 'block';
+  
+  const paths = svg.querySelectorAll("path");
+  for (let i = 0; i < paths.length; i++) {
+    console.log(`Letter ${i} is ${paths[i].getTotalLength()}`);
+  }
+  
+  svg.style.display = originalDisplay;
+});

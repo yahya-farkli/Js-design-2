@@ -1905,40 +1905,213 @@ ul {
   stroke-dashoffset: 281.09722900390625px;
  animation: line-anim 3s ease forwards 1.2s;
 }
+.titleTopSmall path:nth-child(1) {
+  stroke-dasharray: 131.00929260253906px;
+  stroke-dashoffset: 131.00929260253906px;
+  animation: line-anim 3s ease forwards 0.2s;
+}
+
+.titleTopSmall path:nth-child(2) {
+  stroke-dasharray: 160.00518798828125px;
+  stroke-dashoffset: 160.00518798828125px;
+  animation: line-anim 3s ease forwards 0.4s;
+}
+
+.titleTopSmall path:nth-child(3) {
+  stroke-dasharray: 128.71449279785156px;
+  stroke-dashoffset: 128.71449279785156px;
+  animation: line-anim 3s ease forwards 0.6s;
+}
+
+.titleTopSmall path:nth-child(4) {
+  stroke-dasharray: 82.94399261474609px;
+  stroke-dashoffset: 82.94399261474609px;
+  animation: line-anim 3s ease forwards 0.8s;
+}
+
+.titleTopSmall path:nth-child(5) {
+  stroke-dasharray: 89.46042633056641px;
+  stroke-dashoffset: 89.46042633056641px;
+  animation: line-anim 3s ease forwards 1s;
+}
+
+.titleTopSmall path:nth-child(6) {
+  stroke-dasharray: 155.84631347656250px;
+  stroke-dashoffset: 155.84631347656250px;
+  animation: line-anim 3s ease forwards 1.2s;
+}
+
+.titleTopSmall path:nth-child(7) {
+  stroke-dasharray: 182.27418518066406px;
+  stroke-dashoffset: 182.27418518066406px;
+  animation: line-anim 3s ease forwards 1.4s;
+}
+
+.titleTopSmall path:nth-child(8) {
+  stroke-dasharray: 188.68072509765625px;
+  stroke-dashoffset: 188.68072509765625px;
+  animation: line-anim 3s ease forwards 1.6s;
+}
+.titleMidSmall path:nth-child(1) {
+  stroke-dasharray: 128.71456909179688px;
+  stroke-dashoffset: 128.71456909179688px;
+  animation: line-anim 3s ease forwards 0.2s;
+}
+
+.titleMidSmall path:nth-child(2) {
+  stroke-dasharray: 160.00520324707031px;
+  stroke-dashoffset: 160.00520324707031px;
+  animation: line-anim 3s ease forwards 0.4s;
+}
+
+.titleMidSmall path:nth-child(3) {
+  stroke-dasharray: 112.91226196289062px;
+  stroke-dashoffset: 112.91226196289062px;
+  animation: line-anim 3s ease forwards 0.6s;
+}
+
+.titleMidSmall path:nth-child(4) {
+  stroke-dasharray: 193.70265197753906px;
+  stroke-dashoffset: 193.70265197753906px;
+  animation: line-anim 3s ease forwards 0.8s;
+}
+
+.titleMidSmall path:nth-child(5) {
+  stroke-dasharray: 188.68002319335938px;
+  stroke-dashoffset: 188.68002319335938px;
+  animation: line-anim 3s ease forwards 1s;
+}
+
+.titleMidSmall path:nth-child(6) {
+  stroke-dasharray: 128.71441650390625px;
+  stroke-dashoffset: 128.71441650390625px;
+  animation: line-anim 3s ease forwards 1.2s;
+}
+
+.titleMidSmall path:nth-child(7) {
+  stroke-dasharray: 132.31263732910156px;
+  stroke-dashoffset: 132.31263732910156px;
+  animation: line-anim 3s ease forwards 1.4s;
+}
+
+.titleMidSmall path:nth-child(8) {
+  stroke-dasharray: 148.46945190429688px;
+  stroke-dashoffset: 148.46945190429688px;
+  animation: line-anim 3s ease forwards 1.6s;
+}
+.titleBottomSmall path:nth-child(1) {
+  stroke-dasharray: 83.48719024658203px;
+  stroke-dashoffset: 83.48719024658203px;
+  animation: line-anim 3s ease forwards 0.2s;
+}
+
+.titleBottomSmall path:nth-child(2) {
+  stroke-dasharray: 137.84294128417969px;
+  stroke-dashoffset: 137.84294128417969px;
+  animation: line-anim 3s ease forwards 0.4s;
+}
+
+.titleBottomSmall path:nth-child(3) {
+  stroke-dasharray: 160.00524902343750px;
+  stroke-dashoffset: 160.00524902343750px;
+  animation: line-anim 3s ease forwards 0.6s;
+}
+
+.titleBottomSmall path:nth-child(4) {
+  stroke-dasharray: 82.94399261474609px;
+  stroke-dashoffset: 82.94399261474609px;
+  animation: line-anim 3s ease forwards 0.8s;
+}
+
+.titleBottomSmall path:nth-child(5) {
+  stroke-dasharray: 83.48717498779297px;
+  stroke-dashoffset: 83.48717498779297px;
+  animation: line-anim 3s ease forwards 1s;
+}
+
+.titleBottomSmall path:nth-child(6) {
+  stroke-dasharray: 182.27442932128906px;
+  stroke-dashoffset: 182.27442932128906px;
+  animation: line-anim 3s ease forwards 1.2s;
+}
+
+.titleBottomSmall path:nth-child(7) {
+  stroke-dasharray: 105.82174682617188px;
+  stroke-dashoffset: 105.82174682617188px;
+  animation: line-anim 3s ease forwards 1.4s;
+}
+
+.titleBottomSmall path:nth-child(8) {
+  stroke-dasharray: 135.78283691406250px;
+  stroke-dashoffset: 135.78283691406250px;
+  animation: line-anim 3s ease forwards 1.6s;
+}
+
+.titleBottomSmall path:nth-child(9) {
+  stroke-dasharray: 82.94399261474609px;
+  stroke-dashoffset: 82.94399261474609px;
+  animation: line-anim 3s ease forwards 1.8s;
+}
+
+.titleBottomSmall path:nth-child(10) {
+  stroke-dasharray: 33.27125930786133px;
+  stroke-dashoffset: 33.27125930786133px;
+  animation: line-anim 3s ease forwards 2s;
+}
+
+.titleBottomSmall path:nth-child(11) {
+  stroke-dasharray: 187.39823913574219px;
+  stroke-dashoffset: 187.39823913574219px;
+  animation: line-anim 3s ease forwards 2.2s;
+}
+
+
 @keyframes line-anim {
   to {
     stroke-dashoffset: 0;
   }
 }
 
-
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 12px;  /* Width of the entire scrollbar */
+  width: 12px; 
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(21, 21, 21, 0.9);  /* Background of the scrollbar track */
+  background: rgba(21, 21, 21, 0.9); 
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(200, 169, 126, 0.9);  /* Scrollbar thumb color */
-  border-radius: 20px;  /* Round the corners of the scrollbar thumb */
-  border: 3px solid rgba(21, 21, 21, 1);  /* Adds space around the thumb */
+  background-color: rgba(200, 169, 126, 0.9);  
+  border-radius: 20px; 
+  border: 3px solid rgba(21, 21, 21, 1); 
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(200, 169, 126, 1);  /* Change color on hover */
+::-webkit-scrollbar-thumb:hover { 
 }
 
-/* For Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: rgba(200, 169, 126, 0.9) rgba(21, 21, 21, 0.9);
 }
 
-/* Optional: Override specific scrollbars (e.g., overflow areas) */
 .some-element-with-scroll {
-  scrollbar-width: auto; /* Default width */
-  scrollbar-color: rgba(200, 169, 126, 0.9) rgba(21, 21, 21, 0.9); /* Custom colors */
+  scrollbar-width: auto; 
+  scrollbar-color: rgba(200, 169, 126, 0.9) rgba(21, 21, 21, 0.9);
+}
+@media only screen and (max-width: 480px) {
+    ::-webkit-scrollbar {
+  width: 6px; 
+}
+  }
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: var(--prime);
+  }  
+}
+#title {
+  animation: fill 0.75s ease forwards 3.5s;
 }
