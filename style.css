@@ -558,12 +558,15 @@ color: var(--prime);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 3rem;
 }
+
+/*  */
 #cs-contact-490 .cs-content {
-  max-width: 32.625rem;
+  max-width: 100%;
   text-align: left;
+  width: 100%;
 }
 #cs-contact-490 .cs-text {
   /* 16px - 48px */
@@ -809,6 +812,11 @@ section {
 }
 /* tablet */
 @media only screen and (min-width: 37.5rem) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   #timeline-section {
     display: flex;
     flex-direction: column;
@@ -919,7 +927,7 @@ section {
   /* Desktop styles */
 
 @media only screen and (min-width: 64rem) {
- 
+  
   #hero {
     display: grid;
     grid-template-columns: auto 10% 40% ;
@@ -1022,6 +1030,7 @@ section {
       max-width: 50%;
       text-align: center;
     }
+
 }
 @media only screen and (min-width: 65rem){
   .hero-img-container img{
@@ -1050,7 +1059,7 @@ section {
     padding-top: 0;
 
     }
-  header, #cta, #folio, #cs-contact-490{
+  header, #cta, #cs-contact-490, .contact{
     padding-inline: var(--sectionPadding);
   }
   .hero-text svg:last-child {
@@ -1402,6 +1411,10 @@ section {
   #stats-1229 .cs-container {
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: center;
+  }
+  #cs-contact-490 .cs-container{
+    align-items: flex-start;
   }
   /* header {
     padding-bottom: 0%;
@@ -2120,10 +2133,10 @@ ul {
   display: block;
   max-width: 100%;
 }
-main {
+#main {
   display: grid;
   place-items: center;
-  min-height: 100vh;
+  max-height: 100%;
 }
 .comparaison_container {
   display: grid;
@@ -2189,4 +2202,31 @@ main {
   pointer-events: none;
   z-index: 6;
   box-shadow: 1px 1px 1px hsla(0, 50%, 2%, 0.2);
+}
+
+.contact-wrapper {
+  margin-top: clamp(2rem, 6vw, 5rem);
+}
+ iframe {
+  width: 100%;
+  min-height: 35vh;
+  height: 100%;
+}
+.map {
+  min-width: 300px;
+  margin: 0 0 1rem 0;
+  min-height:35vh ;
+  height: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+}
+iframe {
+  border: none;
+  filter: grayscale(40%) invert(95%) brightness(90%);
+}
+
+.map:hover iframe , .map:active iframe {
+  
+  filter: grayscale(35%) brightness(100%) invert(95%);
 }

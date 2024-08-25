@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
     new Swiper('.swiper', {
       // Optional parameters
       loop: true,
-      slidesPerView: 1.5,
+      slidesPerView: 1.25,
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
           slidesPerView: 2,
         },
         1024: {
-          slidesPerView: 1.5,
+          slidesPerView: 1.25,
         },
       },
     });
