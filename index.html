@@ -277,8 +277,8 @@
             </div>
            
             <!-- Form -->
-            <form class="from-left" id="cs-form-490" name="Contact Form" action="https://formsubmit.co/yahyafarkli63@gmail.com" method="POST">
-                <input type="hidden" name="_next" value="http://127.0.0.1:5501/thankyou.html">
+            <form class="from-left" id="cs-form-490" name="Contact Form" method="POST">
+                <!-- <input type="hidden" name="_next" value="thankyou.html"> -->
   
     
                 <label class="cs-label">
@@ -303,6 +303,38 @@
                   </label>
                   <button class="cs-button-solid" type="submit">Submit Message Now</button>
               </form>
+              <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    
+document.getElementById('cs-form-490').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // Get form values
+  var name = document.getElementById('name-490').value;
+  var email = document.getElementById('email-490').value;
+  var phone = document.getElementById('phone-490').value;
+  var findUs = document.getElementById('find-490').value;
+  var message = document.getElementById('message-490').value;
+  
+  // Construct the message
+  var whatsappMessage = "Name: " + name + "\n" +
+                        "Email: " + email + "\n" +
+                        "Phone: " + phone + "\n" +
+                        "How Did You Find Us: " + findUs + "\n" +
+                        "Message: " + message;
+  
+  // Encode the message for URL
+  var encodedMessage = encodeURIComponent(whatsappMessage);
+  
+  // Construct the WhatsApp URL
+  var whatsappUrl = "https://wa.me/212781845710?text=" + encodedMessage;
+  
+  // Redirect to WhatsApp
+  window.open(whatsappUrl, '_blank');
+});
+                });
+
+              </script>
         </div>
     </section>
     <a href="https://wa.me/212781845710" target="_blank" class="whatsapp">

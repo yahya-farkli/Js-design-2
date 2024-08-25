@@ -244,3 +244,30 @@ const comparaisonContainer = document.querySelector('.comparaison_container')
 document.querySelector('.slider-range').addEventListener('input', (e)=>{
   comparaisonContainer.style.setProperty('--position',`${e.target.value}%`);
 })
+
+document.getElementById('cs-form-490').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // Get form values
+  var name = document.getElementById('name-490').value;
+  var email = document.getElementById('email-490').value;
+  var phone = document.getElementById('phone-490').value;
+  var findUs = document.getElementById('find-490').value;
+  var message = document.getElementById('message-490').value;
+  
+  // Construct the message
+  var whatsappMessage = "Name: " + name + "\n" +
+                        "Email: " + email + "\n" +
+                        "Phone: " + phone + "\n" +
+                        "How Did You Find Us: " + findUs + "\n" +
+                        "Message: " + message;
+  
+  // Encode the message for URL
+  var encodedMessage = encodeURIComponent(whatsappMessage);
+  
+  // Construct the WhatsApp URL
+  var whatsappUrl = "https://wa.me/212781845710?text=" + encodedMessage;
+  
+  // Redirect to WhatsApp
+  window.open(whatsappUrl, '_blank');
+});
