@@ -3,7 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+@font-face {
+  font-family: 'Poppins';
+  src: url('webp images\Poppins-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
 :root {
 --prime: rgba(245, 239, 230, 1);
 --dark-charcoal: rgba(42, 42, 42, 1);
@@ -47,6 +52,9 @@ body{
 } 
 
  @media only screen and (min-width: 0rem) {
+  body{
+    overflow-x: hidden;
+  }
   header {
     position: sticky;
     top: -1px;
@@ -310,13 +318,13 @@ nav ul li a:hover::after {
 	display: none;
 }
 .hero-para {
-	font-family: "Poppins", Helvetica;
-    font-weight: 300;
-    color: var(--prime);
-    font-size: 16px;
-    line-height: 140%;
-    word-wrap: wrap;
-	text-align: center;
+  font-family: "Poppins", Helvetica;
+  font-weight: 400;
+  color: var(--prime);
+  font-size: 16px;
+  line-height: 140%;
+  word-wrap: break-word;
+  text-align: center;
 }
 
 .btn {

@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Js-design</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Js-design</title>
+        <meta name="description" content="Services exceptionnels d'architecture et de design d'intérieur à Casablanca et Marrakech. Transformez votre espace avec nos designs innovants inspirés du Maroc.">
+        <meta name="keywords" content="architecture, design d'intérieur, Maroc, Casablanca, Marrakech, design marocain, design d'intérieur à côté de moi, Architecture d'interieur">
+    
+        <!-- Preconnect to external domains -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+        <link rel="preconnect" href="https://unpkg.com">
+    
+        <!-- Preload critical assets -->
+        <link rel="preload" as="style" href="style.css">
+        <link rel="preload" as="script" href="script.js">
+        
+        <!-- Preload critical images -->
+        <link rel="preload" as="image" href="webp images/22.webp">
+        <link rel="preload" as="image" href="webp images/8.webp">
+        <link rel="preload" as="image" href="webp images/cafe-12.webp">
+        <link rel="preload" as="image" href="webp images/cafe-2.webp">
+    
+        <!-- Load CSS -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" media="print" onload="this.media='all'">
+    
+        <!-- Load GSAP scripts -->
+        
+    </head>
 <body>
     
     <header class="header from-top">
@@ -36,7 +53,7 @@
                     <a href="#cs-contact-490" class="nav-link nav-contact">Contact</a>
                 </li>
             </ul>
-            <button id="unique-button" class="button-two" aria-expanded="false">
+            <button id="unique-button" class="button-two" aria-expanded="false"  aria-label="Menu button" alt="Menu button" >
                 <svg stroke="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="30">
                     <line class="line top" x1="90" x2="10" y1="40" y2="40" stroke-width="10" stroke-linecap="round" stroke-dasharray="80" stroke-dashoffset="0"></line>
                     <line class="line bottom" x1="10" x2="90" y1="60" y2="60" stroke-width="10" stroke-linecap="round" stroke-dasharray="80" stroke-dashoffset="0"></line>
@@ -50,7 +67,15 @@
         <div class="hero-sub-container">
             <div class="title-container1 container1">
                 <div class="hero-img-1 hero-img">
-                    <img class="hero-img-img" src="webp images/22.webp" alt="interior design">
+                    <!-- <img class="hero-img-img" src="webp images/22.webp" alt="beautiful house interior image"> -->
+                    <picture class="hero-img-img" alt="beautiful caffe interior architecture realisation project" loading="lazy">
+                        <!-- Mobile Image -->
+                        <source media="(max-width: 600px)" src="webp images/22.webp">
+                        <!-- Desktop Image -->
+                        <source media="(min-width: 601px)" src="webp images/22.webp">
+                        <!-- Fallback Image -->
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="webp images/22.webp" alt="beautiful caffe interior architecture realisation project" class="hero-img-img"  width="1920" max-height="1280">
+                    </picture>
                 </div>
                 <div class="hero-text">
 <svg width="276" height="56" viewBox="0 0 276 56" fill="none" xmlns="http://www.w3.org/2000/svg" id="title" class="titleTop"
@@ -108,12 +133,26 @@
                               
                      </div>
                 <div class="hero-img-2 hero-img">
-                    <img class="hero-img-img" src="webp images/8.webp" alt="">
+                    <!-- <img class="hero-img-img" src="webp images/8.webp" alt="beautiful house interior image"> -->
+                    <picture class="hero-img-img" alt="beautiful caffe interior architecture realisation project" loading="lazy">
+                        <!-- Mobile Image -->
+                        <source media="(max-width: 600px)" src="webp images/8.webp">
+                        <!-- Desktop Image -->
+                        <source media="(min-width: 601px)" src="webp images/8.webp">
+                        <!-- Fallback Image -->
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="webp images/8.webp" alt="beautiful caffe interior architecture realisation project" class="hero-img-img"  width="1920" max-height="1280">
                 </div>
             </div>
             <div class="title-container1 container3 ">
                 <div class="hero-img hero-img-3 ">
-                    <img class="hero-img-img" src="webp images/cafe-12.webp" alt="">
+                    <!-- <img class="hero-img-img" src="webp images/cafe-12.webp" alt="beautiful house interior image"> -->
+                    <picture class="hero-img-img" alt="beautiful caffe interior architecture realisation project" loading="lazy">
+                        <!-- Mobile Image -->
+                        <source media="(max-width: 600px)" src="webp images/cafe-12.webp">
+                        <!-- Desktop Image -->
+                        <source media="(min-width: 601px)" src="webp images/cafe-12.webp">
+                        <!-- Fallback Image -->
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="webp images/cafe-12.webp" alt="beautiful caffe interior architecture realisation project" class="hero-img-img"  width="1920" max-height="1280">
                 </div> 
                 <div class="hero-text">
                     <svg width="341" height="56" viewBox="0 0 341 56" fill="none" xmlns="http://www.w3.org/2000/svg" id="title" class="titleBottom">
@@ -164,7 +203,15 @@
     <div class="hero-gap"></div>
 
     <div class="hero-img-container">
-        <img class="hero-img-container-img" src="webp images/cafe-2.webp" alt="" loading="lazy">
+        <!-- <img class="hero-img-container-img" src="webp images/cafe-2.webp" alt="beautiful caffe interior realisation project" loading="lazy"> -->
+        <picture class="hero-img-container-img" alt="beautiful caffe interior realisation project" loading="lazy">
+            <!-- Mobile Image -->
+            <source media="(max-width: 600px)" src="webp images/cafe-2.webp">
+            <!-- Desktop Image -->
+            <source media="(min-width: 601px)" src="webp images/cafe-2.webp">
+            <!-- Fallback Image -->
+            <img aria-hidden="true" loading="lazy" decoding="async" src="webp images/cafe-2.webp" alt="beautiful caffe interior realisation project" class="hero-img-container-img"  width="1920" max-height="1280">
+        </picture>
     </div>
   </section> 
   <section id="services">
@@ -173,10 +220,18 @@
 
   
     <div class="service-item grid-item-1"  >
-      <div class="image-container from-top">
-        
-          <img src="webp images/cafe-6.webp" alt="Residential interior"  fetchpriority="high">
-      </div>
+      <!-- <div> -->
+<!--         
+          <img src="webp images/cafe-6.webp" alt="Residential interior"  fetchpriority="high"> -->
+          <picture  class="image-container from-top" alt="Residential interior" loading="lazy">
+            <!-- Mobile Image -->
+            <source media="(max-width: 600px)" src="webp images/cafe-6.webp">
+            <!-- Desktop Image -->
+            <source media="(min-width: 601px)" src="webp images/cafe-6.webp">
+            <!-- Fallback Image -->
+            <img aria-hidden="true" loading="lazy" decoding="async" src="webp images/cafe-6.webp" alt="Residential interior" class="hero-img-container-img"  width="1920" max-height="1280">
+        </picture>
+      <!-- </div> -->
       <h3 class=" from-bottom">De logement</h3>
       <p class=" from-bottom">Aménagement résidentiel alliant style, fonctionnalité et personnalité : votre maison, votre signature.</p>
       <a href="" class="text-shine learn-more from-bottom">Learn more <i class="fa-solid fa-chevron-right"></i></a>
@@ -184,7 +239,17 @@
     </div>
     <div class="gap2"></div>
     <div class="service-item grid-item-2">
-        <div class="image-container from-top" ><img src="webp images/Le Cafconce 5.webp" alt="Commercial interior" loading="lazy"></div>
+        <!-- <div > -->
+            <!-- <img src="webp images/Le Cafconce 5.webp" alt="Commercial interior" loading="lazy"> -->
+            <picture  class="image-container from-top" alt="Commercial interior" loading="lazy">
+                <!-- Mobile Image -->
+                <source media="(max-width: 600px)" src="webp images/Le Cafconce 5.webp">
+                <!-- Desktop Image -->
+                <source media="(min-width: 601px)" src="webp images/Le Cafconce 5.webp">
+                <!-- Fallback Image -->
+                <img aria-hidden="true" loading="lazy" decoding="async" src="webp images/Le Cafconce 5.webp" alt="Commercial interior" class="hero-img-container-img"  width="1920" max-height="1280">
+            </picture>
+        <!-- </div> -->
         <h3 class=" from-bottom">Commercial</h3>
         <p class=" from-bottom">Conception d'intérieurs professionnels : boostez votre productivité et affirmez l'identité de votre marque.</p>
         <a href="" class="text-shine learn-more from-bottom">Learn more<i class="fa-solid fa-chevron-right"></i>
@@ -194,10 +259,17 @@
 
         <div class="gap"></div>
     <div class="service-item grid-item-3 from-top">
-      <div class="image-container">
-          <img src="webp images/15.webp " alt="Hospitality interior" loading="lazy">
-          
-      </div>
+      <!-- <div > -->
+          <!-- <img src="webp images/15.webp " alt="Hospitality interior" loading="lazy"> -->
+          <picture alt="Hospitality interior" class="image-container" loading="lazy">
+            <!-- Mobile Image -->
+            <source media="(max-width: 600px)" src="webp images/15.webp">
+            <!-- Desktop Image -->
+            <source media="(min-width: 601px)" src="webp images/15.webp">
+            <!-- Fallback Image -->
+            <img aria-hidden="true" loading="lazy" decoding="async" src="webp images/15.webp" alt="Hospitality interior" class="hero-img-container-img"  width="1920" max-height="1280">
+        </picture>
+      <!-- </div> -->
       <h3 class=" from-bottom">Hôtellerie</h3>
       <p class=" from-bottom">Conception d'espaces hôteliers de luxe : offrez à vos clients des séjours inoubliables.</p>
       <a href="" class="text-shine from-bottom learn-more">Learn more 
@@ -210,7 +282,17 @@
             <a class="cta-text" href="#">OBTENEZ UN DEVIS GRATUIT<i class="fa-solid fa-arrow-right "></i></a>
             
         </div>
-        <div class="cta-img"><img src="webp images/11 (1).webp" loading="lazy" alt="interior"></div>
+        <div class="cta-img">
+            <!-- <img src="webp images/11 (1).webp" loading="lazy" alt="beautiful interior architecture. beautiful interior design"> -->
+            <picture alt="beautiful interior architecture. beautiful interior design">
+                <!-- Mobile Image -->
+                <source media="(max-width: 600px)" src="webp images/11 (1).webp" >
+                <!-- Desktop Image -->
+                <source media="(min-width: 601px)" src="webp images/11 (1).webp">
+                <!-- Fallback Image -->
+                <img aria-hidden="true" loading="lazy" decoding="async" src="webp images/11 (1).webp" alt="beautiful interior architecture. beautiful interior design" width="1920" height="1280">
+            </picture>
+        </div>
     </section>
     <section id="folio">
         <div class="content">
@@ -223,14 +305,14 @@
         </div>
         <div class="swiper from-right">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="webp images/cafe-1.webp" alt="Portfolio image 1"></div>
+                <div class="swiper-slide"><img  decoding="async" src="webp images/cafe-1.webp" alt="Interior architecture and design project 1 image 1"></div>
                 
-                <div class="swiper-slide"><img src="webp images/8.webp" alt="Portfolio image 3"></div>
-                <div class="swiper-slide"><img src="webp images/cafe-6.webp" alt="Portfolio image 4"></div>
-                <div class="swiper-slide"><img src="webp images/cafe-13.webp" alt="Portfolio image 1"></div>
-                <div class="swiper-slide"><img src="webp images/cafe-14.webp" alt="Portfolio image 2"></div>
-                <div class="swiper-slide"><img src="webp images/Le Cafconce 5.webp" alt="Portfolio image 3"></div>
-                <div class="swiper-slide"><img src="webp images/Le Cafconce 7.webp" alt="Portfolio image 4"></div>
+                <div class="swiper-slide"><img  decoding="async" src="webp images/8.webp" alt="Interior architecture and design project 1 image 3"></div>
+                <div class="swiper-slide"><img  decoding="async" src="webp images/cafe-6.webp" alt="Interior architecture and design project 1 image 4"></div>
+                <div class="swiper-slide"><img  decoding="async" src="webp images/cafe-13.webp" alt="Interior architecture and design project 1 image 1"></div>
+                <div class="swiper-slide"><img  decoding="async" src="webp images/cafe-14.webp" alt="Interior architecture and design project 1 image 2"></div>
+                <div class="swiper-slide"><img  decoding="async" src="webp images/Le Cafconce 5.webp" alt="Interior architecture and design project 1 image 3"></div>
+                <div class="swiper-slide"><img  decoding="async" src="webp images/Le Cafconce 7.webp" alt="Interior architecture and design project 1 image 4"></div>
             </div>
         </div>
         <button class="btn see-more-small">
@@ -252,7 +334,7 @@
             <div class="cs-content">
                
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1721210.6141745367!2d-9.16176682498258!3d32.58647121538121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8a96f3e4cc3869c7%3A0x7608a9ac0b1a4c09!2sJs%20design!5e0!3m2!1sen!2sma!4v1724597362268!5m2!1sen!2sma"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe title="Js-design Location on Google maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1721210.6141745367!2d-9.16176682498258!3d32.58647121538121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8a96f3e4cc3869c7%3A0x7608a9ac0b1a4c09!2sJs%20design!5e0!3m2!1sen!2sma!4v1724597362268!5m2!1sen!2sma"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <span class="cs-header from-bottom" >Address</span>
                 <a href="" class="cs-link from-bottom">
@@ -337,7 +419,7 @@ document.getElementById('cs-form-490').addEventListener('submit', function(e) {
               </script>
         </div>
     </section>
-    <a href="https://wa.me/212781845710" target="_blank" class="whatsapp">
+    <a href="https://wa.me/212781845710" target="_blank" class="whatsapp" aria-label="Ask us via whatsapp">
         <i class="fa-brands fa-whatsapp fa-3x text-shine"></i>
     </a>
     
@@ -367,6 +449,11 @@ document.getElementById('cs-form-490').addEventListener('submit', function(e) {
             </span>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     
+        <!-- Load other JavaScript -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+        <script src="script.js" defer></script>
 </body>
 </html>
