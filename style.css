@@ -10,14 +10,14 @@
   font-style: normal;
 }
 :root {
---prime: #F5EFE6;
---dark-charcoal: #2A2A2A;
---accent-1: #C8A97E;
---accent-2: #8BA888;
---prime-2: #FFF4D4;
---black: #151515;
---accent-3: #D77E03;
---accent-4: #F1BA6D;
+--prime: rgba(245, 239, 230, 1);
+--dark-charcoal: rgba(42, 42, 42, 1);
+--accent-1: rgba(200, 169, 126, 1);
+--accent-2: rgba(139, 168, 136, 1);
+--prime-2: rgba(255, 244, 212, 1);
+--black: rgba(21, 21, 21, 1);
+--accent-3: rgba(215, 126, 3, 1);
+--accent-4: rgba(241, 186, 109, 1);
 --titles-font-font-family: "Cormorant Garamond", Helvetica;
 --titles-font-font-weight: 400;
 --titles-font-font-size: 24px;
@@ -687,11 +687,11 @@ color: var(--prime);
   background-color: #0000001e;
 }
 #cs-contact-490 .cs-input:hover,
-#cs-contact-490 textarea:hover, .sm__des {
+#cs-contact-490 textarea:hover {
   border: 1px solid var(--gray);
 }
 #cs-contact-490 .cs-input::placeholder,
-#cs-contact-490 textarea::placeholder,.sm__des {
+#cs-contact-490 textarea::placeholder {
   color: #6969699a;
 }
 #cs-contact-490 textarea {
@@ -1102,7 +1102,7 @@ section {
   }
 }
  
-  #why-us > div > h1,.testimonials > h1, #timeline > h1, #benefits > .benefits-container > h1, .header-content h1, #intro > .content > h1,.benefits-container h1, #timeline-section > h1, .stat-title , #credentials > h1,#pack__table > h1{
+  #why-us > div > h1,.testimonials > h1, #timeline > h1, #benefits > .benefits-container > h1, .header-content h1, #intro > .content > h1,.benefits-container h1, #timeline-section > h1, .stat-title , #credentials > h1{
   font-family: "Raleway";
   font-size: 36px;
   font-weight: 600;
@@ -1578,7 +1578,7 @@ section {
       align-items: center;
       gap: 2rem;
   }
-  #why-us > div > h1, .testimonials > h1, #timeline > h1, #benefits > .benefits-container > h1 , .header-content h1,.stat-title,#credentials > h1,#pack__table > h1 {
+  #why-us > div > h1, .testimonials > h1, #timeline > h1, #benefits > .benefits-container > h1 , .header-content h1,.stat-title,#credentials > h1 {
     font-family: "Raleway";
     font-size: 42px;
     font-weight: 600;
@@ -2238,86 +2238,3 @@ iframe {
   
   filter: grayscale(35%) brightness(100%) invert(95%);
 }
-#pack__table {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#pack__table > .pack__para {
-  text-align: center;
-}
-
-#pack__table > h1 {
-  background: linear-gradient(86deg, #a38a66 0%, var(--accent-1) 15%, var(--accent-1) 75%, #756349 100%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
-#pack__table .service__pack {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  max-width: 1200px;
-  min-height: 500px;
-  gap: 1rem; /* Add some gap between grid items */
-}
-
-#pack__table .pack {
-  display: grid;
-  grid-template-rows: repeat(auto-fill, minmax(1fr, auto));
-  min-height: 100%;
-  max-height: 500px;
-  place-self: center;
-  padding-left: 0.5rem;
-  text-align: left; /* Center text horizontally */
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
-}
-
-#pack__table .sm__des {
-  font-size: 0.75rem;
-}
-
-/* Media Queries for Responsiveness */
-@media (min-width: 480px) {
-  #pack__table .pack {
-    padding-left: 1rem;
-    max-width: 300px;
-  }
-  #pack__table .pack .price-tag {
-    text-align: center;
-  }
-  #pack__table .sm__des {
-    font-size: 0.85rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  #pack__table .service__pack {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  /* Ensure other pack elements maintain their original height */
-  #pack__table .pack:not(:nth-of-type(2)) {
-    min-height: 500px;
-  }
-
-  /* Make the second pack element taller */
-  #pack__table .pack:nth-of-type(2) {
-    min-height: 600px;
-  }
-
-  /* Align "Learn More" buttons */
-  #pack__table .pack:nth-of-type(1) .learn-more,
-  #pack__table .pack:nth-of-type(3) .learn-more {
-    align-self: flex-end; /* Align buttons to the bottom */
-    justify-self: center; /* Center buttons horizontally */
-  }
-}
-
-/* Additional styling for "Learn More" buttons */
-#pack__table .learn-more {
-  font-size: 0.85rem;
-}
-
