@@ -2349,8 +2349,6 @@ section {
 .pricing-palden .pricing-currency {
   font-size: 0.15em;
   vertical-align: top;
-  transform: translate(-50%, -200%);
-  position: absolute;
 }
 .pricing-palden .pricing-period {
   font-size: 0.15em;
@@ -2367,6 +2365,9 @@ section {
   padding: 0.25em 0 2.5em;
   list-style: none;
   text-align: center;
+}
+.pricing-palden .pricing-feature {
+  padding: 1em 0;
 }
 .pricing-palden .pricing-feature {
   padding: 0.25rem 1.5rem;
